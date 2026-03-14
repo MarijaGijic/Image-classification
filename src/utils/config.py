@@ -23,8 +23,8 @@ class Config:
     HOG_ORIENTATION: int = 9
 
     # LBP
-    LBP_RADIUS: int = 3
-    LBP_N_POINTS: int = 9
+    LBP_RADIUS: float = 1.0
+    LBP_N_POINTS: int = 8
 
     # Gabor
     GABOR_FREQS: list[float] = [0.1, 0.3, 0.5]
