@@ -18,7 +18,7 @@ class Config:
 
     RESULT_BASE: str = "results"
     # HoG
-    HOG_PIXELS_PER_CELL: tuple[int, int] = (16, 16)
+    HOG_PIXELS_PER_CELL: tuple[int, int] = (8, 8)
     HOG_CELLS_PER_BLOCK: tuple[int, int] = (2, 2)
     HOG_ORIENTATION: int = 9
 
