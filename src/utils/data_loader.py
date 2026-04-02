@@ -53,7 +53,7 @@ def load_dataset(
             except Exception as exc:
                 print(f" Skipping {fname}: {exc}")
 
-        category_stats[fname] = count
+        category_stats[cat_name] = count
         print(f" {cat_name}: {count} images loaded")
     
     return np.array(images), np.array(labels), category_stats

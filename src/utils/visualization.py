@@ -49,7 +49,7 @@ def plot_sample_images(
         cls_idx = np.where(labels == i)[0][:n_per_class]
         for j, idx in enumerate(cls_idx):
             ax = axes[i, j] if n_classes > 1 else axes[j]
-            ax.show(images[idx])
+            ax.imshow(images[idx])
             ax.set_title(label if j == 0 else "", fontsize=9)
             ax.axis("off")
 

@@ -23,7 +23,7 @@ def extract_lbp_features(
 
     for img in images:
         gray = rgb2gray(img)
-        lbp = local_binary_pattern(img, P=n_points, R=radius, method="uniform")
+        lbp = local_binary_pattern(gray, P=n_points, R=radius, method="uniform")
         hist, _ = np.histogram(lbp.ravel(), bins=59, range=(0, 59), density=True)
         features.append(hist.astype(np.float32))
     
